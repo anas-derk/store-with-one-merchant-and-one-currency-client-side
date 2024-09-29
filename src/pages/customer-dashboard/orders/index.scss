@@ -1,0 +1,26 @@
+.customer-orders-managment{
+    .customer-orders{
+        h1{
+            @media (max-width: 576px) {
+                text-align: center;
+                span{
+                    display: block;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .filters{
+            button{
+                font-size: 12px;
+            }
+        }
+        table{
+            th, td, a{
+                font-size: 12px;
+            }
+            a{
+                padding: 8px;
+            }
+        }
+    }
+}

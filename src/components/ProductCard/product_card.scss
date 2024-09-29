@@ -1,0 +1,63 @@
+.product-card{
+    .flash-discount-description{
+        .flash-icon{
+            font-size: 35px;
+        }
+        h6, .remaining-time, button{
+            border: 4px solid var(--main-color-two);
+        }
+        .flash-icon, button{
+            background-color: var(--main-color-two);
+        }
+        .remaining-time, button{
+            font-size: 12px;
+        }
+    }
+    .product-managment-box{
+        .sale-box{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .add-to-cart-button-box{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            &.displaying{
+                opacity: 1;
+            }
+            .cart-btn{
+                width: 100%;
+                border: none;
+            }
+            .add-to-cart-btn{
+                background-color: var(--main-color-two);
+                font-weight: bold;
+            }
+        }
+    }
+    .product-details{
+        .product-name{
+            font-size: 16px;
+        }
+        .product-category{
+            font-size: 15px;
+        }
+        .product-price, .product-price-after-discount{
+            font-size: 13px;
+        }
+        .discount-timer-box{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 200px;
+            background-color: #0F0;
+            font-size: 20px;
+            border: 3px solid #000;
+            font-weight: bold;
+        }
+    }
+}

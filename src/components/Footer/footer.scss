@@ -1,0 +1,36 @@
+footer{
+    background-color: #FFF;
+    .logo-box{
+        img{
+            max-width: 100%;
+        }
+    }
+    .link-btn{
+        font-size: 11px;
+    }
+    .title{
+        width: fit-content;
+        font-size: 14px;
+    }
+    .row{
+        @media (max-width: 1199px) {
+            gap: 30px;
+        }
+    }
+    .payment-methods-list{
+        .payment-method-item{
+            font-size: 14px;
+            .knet-icon{
+                width: 14px;
+            }
+        }
+    }
+    .subscription-form{
+        button, input{
+            font-size: 12px !important;
+        }
+    }
+    p{
+        font-size: 14px;
+    }
+}

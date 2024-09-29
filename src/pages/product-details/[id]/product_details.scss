@@ -1,0 +1,147 @@
+$width: 400px;
+$height: 400px;
+
+.product-details {
+    .product-details-box {
+        color: #FFF;
+        .section-name{
+            border-bottom: 3px solid var(--main-color-two);
+            width: fit-content;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+        .product-images-box {
+            .main-product-image-box {
+                width: $width;
+                height: $height;
+                max-height: 100%;
+                max-width: 100%;
+                .slick-slider {
+                    width: $width;
+                    height: $height;
+                    max-height: 100%;
+                    max-width: 100%;
+                    .slick-list {
+                        .slick-slide {
+                            div {
+                                width: $width;
+                                height: $height;
+                                max-height: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                    .slick-arrow {
+                        z-index: 1;
+                    }
+                    .slick-next {
+                        right: 20px;
+                    }
+                    .slick-prev {
+                        left: 20px;
+                    }
+                }
+            }
+            .row {
+                @media (max-width: 576px) {
+                    gap: 30px;
+                }
+            }
+        }
+        .all-product-images{
+            .product-image-box,
+            .gallery-image-box {
+                img {
+                    cursor: pointer;
+                    width: 92px;
+                    height: 92px;
+                    &:hover {
+                        border: 3px solid #000;
+                    }
+                    &.selection {
+                        border: 3px solid #000;
+                    }
+                }
+            }
+        }
+        .product-price-and-quantity {
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+        }
+        .add-to-wish-list-or-cart {
+            .product-managment-icon {
+                cursor: pointer;
+                font-size: 22px;
+            }
+            .add-to-cart {
+                @media (max-width: 767px) {
+                    row-gap: 30px;
+                }
+                .select-product-quantity-box {
+                    border: 1px solid #FFF;
+                    .select-product-quantity-icon {
+                        cursor: pointer;
+                        font-size: 20px;
+                        height: 25px;
+                        border-radius: 2px;
+                        &:hover {
+                            background-color: #FFF;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+        .product-description-and-referrals {
+            h6 {
+                cursor: pointer;
+                &:hover {
+                    color: var(--main-color-two);
+                }
+                &.selected {
+                    color: var(--main-color-two);
+                    background-color: #FFF;
+                    font-weight: bold;
+                    color: #000;
+                }
+            }
+        }
+        .product-description{
+            .description-content{
+                font-size: 13px;
+            }
+        }
+        .product-referrals {
+            .rating-box {
+                .star-icon {
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .note {
+            @media (max-width: 767px) {
+                line-height: 2;
+            }
+        }
+        .referral-form {
+            textarea {
+                height: 100px;
+                resize: none;
+            }
+            .name-and-email-box {
+                @media (max-width: 767px) {
+                    gap: 30px;
+                }
+            }
+            .save-your-details-box{
+                label{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

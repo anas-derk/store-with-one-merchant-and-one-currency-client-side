@@ -1,0 +1,45 @@
+.checkout{
+    .page-content{
+        .container-fluid{
+            h6{
+                font-size: 14px;
+            }
+            > .row{
+                @media (max-width: 991px) {
+                    gap: 30px;
+                }
+                .first-and-last-name{
+                    .row{
+                        > div:first-of-type{
+                            @media (max-width: 767px) {
+                                margin-bottom: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .payment-methods{
+                .row{
+                    @media (max-width: 767px) {
+                        gap: 10px;
+                        .checkout-link{
+                            width: 90% !important;
+                        }
+                    }
+                }
+            }
+            .order-total{
+                font-size: 13px;
+            }
+        }
+        label{
+            font-size: 14px;
+        }
+        .radio-input{
+            width: fit-content;
+        }
+        .payment-icon{
+            font-size: 40px;
+        }
+    }
+}
